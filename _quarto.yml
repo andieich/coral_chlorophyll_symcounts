@@ -1,19 +1,42 @@
 project:
   type: website
-
+  output-dir: _site
+  
 website:
-  title: "coral_chlorophyll_symcounts"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  search: false
+  title: ""
 
+  sidebar:
+    title: "CORAL protocols"
+    background: light
+    logo: images/logo.png
+    style: "docked"
+    collapse-level: 4
+    contents:
+      - text: "Overview"
+        href: index.qmd
+      - section: "Steps"
+        contents: 
+        - text: "Tissue removal"
+          href: 1_tissue_removal.qmd
+        - text: "Chlorophyll"
+          href: 2_chlorophyll.qmd
+        - text: "Counts"
+          href: 3_symb_counts.qmd
+        - text: "Area"
+          href: 4_area.qmd
+      - text: "Metadata"
+        href: 5_metadata.qmd
+        
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [lux, style/style.css]
     toc: true
+    toc-depth: 4
+    toc-title: "On this page"
+    toc-location: right
+    smooth-scroll: true
 
 editor: visual
-
+bibliography: bib/references.bib
+csl: bib/apa.csl

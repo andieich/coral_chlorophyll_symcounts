@@ -1,7 +1,25 @@
 ---
-title: "coral_chlorophyll_symcounts"
+format: 
+  html:
+    toc: false
 ---
 
-This is a Quarto website.
+[Remove coral tissue](1_tissue_removal.qmd)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+An air gun is used to blow off the corals tissue in sterile filtrated seawater. The tissue slurry is collected in a zip-lock bag and transferred into a 50 mL tube. After centrifugation to remove excess water, the slurry is sub-sampled for chlorophyll extraction and Symbiodiniaceae counts.
+
+[Extract chlorophyll](2_chlorophyll.qmd)
+
+Chlorophyll is extracted in acetone and the concentration measured with a photometer.
+
+[Symbiodiniaceae counts](3_symb_counts.qmd)
+
+Symbiodiniaceae are counted with a haemocytometer.
+
+[Surface area](4_area.qmd)
+
+The chlorophyll concentration and Symbiodiniaceae counts have to be normalized to the tissue surface area of the coral fragment. The area is estimated by comparing the weight of the coral fragment before and after coating it with paraffin wax.
+
+[Meta](5_metadata.qmd)
+
+Enter the data on samples, dates, file names, etc in a Google Sheet to allow easy processing with R.

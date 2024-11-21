@@ -1,0 +1,41 @@
+---
+title: "Surface Area"
+---
+
+### Overview
+
+The chlorophyll concentration and Symbiodiniaceae counts have to be normalized to the coral surface (living tissue). The surface area is estimated with the difference of the weight of the coral fragment before and after immersion in paraffin wax. Each sample is immersed two times in the wax: the first time to close all pores and the second time for the actual surface estimation. Each time, wax at parts without tissue (the cut sides) have to be scratched off. The tissue surface is calculated with the formula in [@veal2010]:
+
+$$
+A = 34.32 * \Delta w
+$$
+
+, where $A$ is the surface area in $cm^2$ and $\Delta w$ the the increase in weight in g between the first and second immersion.
+
+### Materials
+
+-   [ ] Yarn
+-   [ ] Paper for labels
+-   [ ] Scale
+-   [ ] **Warm** thing with wax
+-   [ ] **Tree**?
+
+### Method
+
+1.  Attach yarn to coral fragment, keep one end with a length of ca. 15 cm.
+
+2.  Attach paper label with sample ID to yarn.
+
+3.  Weight fragment and note as `w_initial` in metadata sheet.
+
+4.  Heat **XXX** to **XX**°C. Stir and make sure that the paraffin is completely melted.
+
+5.  Dip in the fragment for **X** s and **shake off?**
+
+6.  Weight after the wax cooled down (after about x sec) and note as `w1`.
+
+7.  Use fingernails to scratch off parts without tissue (edges where fragment was cut), weight, and not as `w1_scratched`.
+
+8.  Repeat steps 5 to 7 and note weight as `w2` and `w2_scratched`.
+
+9.  **CLEAN WARM THING???**

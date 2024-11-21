@@ -1,0 +1,116 @@
+---
+title: ""
+---
+
+## Chlorophyll Extraction
+
+### Materials
+
+-   [ ] Acetone (2 mL per sample)
+-   [ ] Centrifuge with rotor 12154
+-   [ ] Ice
+-   [ ] 1,000 µL pipette and tips (2 tips per sample)
+-   [ ] Vortexter
+-   [ ] Centrifuge
+-   [ ] Kimwipes
+
+### Method
+
+::: callout-caution
+Chlorophyll is very unstable. Always keep samples on ice and if possible in darkness.
+:::
+
+1.  Centrifuge up to 24 sample tubes using rotor 12154 for 5 min at 12,000 rpm at 4°C. Keep centrifuge balanced if less than 24 tubes are used.
+
+2.  Remove supernatant with 1,000 µL pipette. Carefully remove remaining drops of supernatant with Kimwipes.
+
+3.  Add 1,000 µL acetone and close tube. Homogenize with pipette and vortex for 15 s. Do not re-use tips.
+
+4.  Extract chlorophyll for 24 h at 4 °C (Fridge Biomol 2). Keep samples wrapped in aluminium foil.
+
+## Chlorophyll Measurement
+
+### Overview {#overview}
+
+The chlorophyll concentration ($µg~mL^{-1}$) is calculated based on the formulas given in [@jeffrey1975]:
+
+$$
+\text{Chlorophyll}~a = 11.43 \frac{A_{663} - A_{750}}{PL}  – 0.64\frac{A_{630} - A_{750}}{PL}
+$$
+
+, where $A_{663}$, $A_{630}$, and $A_{750}$ is the absorption at 663, 630, and 750 nm, and $PL$ the path length of the cuvette (1 cm).
+
+The photometer can read whole plates (96 samples). However, since acetone is used to extract the chlorophyll, a quartz cuvette has to be used instead of plates made of plastic. The software of the photometer still visualizes the measurements of this cuvette as a plate which can be confusing.
+
+The photometer will automatically measure the absorption at 663, 630, and 750 nm and does the blank-correction automatically. Each measurement is done twice and blanks are measured at the beginning and after every 10 samples, resulting in the following plate outlay:
+
+![](images/clipboard-3836681340.png){#plateoverview width="600"}
+
+[BLK]{style="background-color: #80FFFE"} corresponds to blank measurements and [SPLXX]{style="background-color: #A6CAEE"} to samples.
+
+Follow these [steps](5_metadata.qmd) to enter the metadata (which sample is at which position, file names, etc).
+
+### Materials
+
+-   [ ] Vortexter
+-   [ ] Centrifuge with rotor 12154
+-   [ ] Ice
+-   [ ] Acetone
+-   [ ] Kimwipes
+-   [ ] 1000 µL pipette & tips
+-   [ ] BioTek **XXX**
+-   [ ] Quartz cuvette (dark and shattered)
+
+### Method
+
+1.  After the incubation (note down incubation time), vortex samples for 15 s and centrifuge samples using rotor 12154 for 5 min at 12,000 rpm at 4 °C. Keep samples on ice and in darkness. Transport samples carefully to not damage the pellet.
+
+2.  Turn on BioTek photometer and connect to Dell via USB.
+
+3.  Double-click on `2024_04_20_chlorophyll+carotinoides_andi.prt` to start software (backup stored [here](photometer_configuration/2024_04_20_chlorophyll+carotinoides_andi.prt)).
+
+4.  Click on `Create experiment and read now`:
+
+    ![](images/Capture%20d'écran%202024-11-19%20161241.png){width="350"}
+
+5.  At first, the photometer takes a background measurement without any cuvette inserted. Follow the instructions in the pop-up and click `OK`.
+
+    ![](images/clipboard-2278673067.png){width="350"}
+
+6.  Start measuring the blank. Clean quartz cuvette with acetone and Kimwipes, add 500 µL acetone, and insert cuvette into photometer. Click `OK` in pop-up window.
+
+    ![](images/clipboard-3845169148.png){width="350"}
+
+7.  Repeat blank measurement. Click on `Oui` in pop-up window.
+
+    ![](images/clipboard-70391127.png){width="350"}
+
+8.  Measure first sample. Remove cuvette from photometer, clean with acetone and Kimwipes and add 500 µL sample extract. Click on `Oui` in pop-up window (as for second blank measurement).
+
+9.  Repeat measurement (click `Oui`).
+
+10. Remove cuvette from photometer, clean with acetone and Kimwipes and measure next sample.
+
+11. Repeat as described before for 10 samples (i.e. 20 measurements). Then, measure blank as described before (2x) and continue to measure samples.
+
+::: callout-note
+If you do a mistake in the sequence of measurements, correct it accordingly in the table (see [Problems])
+:::
+
+8.  When all samples are measured or after 43 samples, click on `Non` in pop-up window.
+
+9.  Save experiment in your folder. Name it as follows: `YYYY_MM_DD_chl_adaptome_#.xpt`, where `YYYY_MM_DD` is the date and `#` the batch number (each day, start with `1`), e.g. `2024_11_19_chl_adaptome_1.xpt`.
+
+10. To export the data, click on `Export`.
+
+    ![](images/Capture%20d'écran%202024-11-19%20161812.png){width="350"}
+
+11. Save data as `.txt` (default) in your folder and name it `YYYY_MM_DD_chl_adaptome_#.txt` (as described above).
+
+::: callout-caution
+Backup your data each day you are measuring. Either upload the folder to Google Drive or save it on a USB key. Keep all data also on the computer.
+:::
+
+## Problems
+
+If the sequence of the measurements does not fit anymore to the pre-defined layout (see [plate overview](#plateoverview)), the automatic blank-correction in th ephotometer does not work anymore. The blank-correction will be done later in R. It is therefore important to change the `type` column for the corresponding positions (more details [here](5_metadata.qmd)).
