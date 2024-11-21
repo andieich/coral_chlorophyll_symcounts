@@ -1,5 +1,5 @@
 ---
-title: "Surface Area"
+title: ""
 ---
 
 ### Overview

@@ -17,7 +17,7 @@ title: ""
 ### Method
 
 ::: callout-caution
-Chlorophyll is very unstable. Always keep samples on ice and if possible in darkness.
+Chlorophyll is very unstable. Always keep samples on ice and as dark as possible.
 :::
 
 1.  Centrifuge up to 24 sample tubes using rotor 12154 for 5 min at 12,000 rpm at 4°C. Keep centrifuge balanced if less than 24 tubes are used.

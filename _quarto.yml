@@ -5,7 +5,9 @@ project:
 website:
   search: false
   title: ""
-
+  favicon: images/logo.png
+  page-footer: 
+    center: "Andreas Eich 21.11.2024"
   sidebar:
     title: "CORAL protocols"
     background: light
@@ -27,7 +29,6 @@ website:
           href: 4_area.qmd
       - text: "Metadata"
         href: 5_metadata.qmd
-        
 format:
   html:
     theme: [lux, style/style.css]

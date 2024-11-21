@@ -1,4 +1,5 @@
 ---
+title: Coral protocols
 format: 
   html:
     toc: false
@@ -20,6 +21,6 @@ Symbiodiniaceae are counted with a haemocytometer.
 
 The chlorophyll concentration and Symbiodiniaceae counts have to be normalized to the tissue surface area of the coral fragment. The area is estimated by comparing the weight of the coral fragment before and after coating it with paraffin wax.
 
-[Meta](5_metadata.qmd)
+[Metadata](5_metadata.qmd)
 
 Enter the data on samples, dates, file names, etc in a Google Sheet to allow easy processing with R.
