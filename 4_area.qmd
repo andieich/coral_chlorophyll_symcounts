@@ -17,7 +17,7 @@ $$
 -   [ ] Yarn
 -   [ ] Paper for labels
 -   [ ] Scale
--   [ ] Water bath with parrafin wax
+-   [ ] Paraffin dispenser with paraffin wax
 
 ### Method
 
@@ -27,12 +27,14 @@ $$
 
 3.  Weight fragment and note as `w_initial` in metadata sheet.
 
-4.  Heat **XXX** to **XX**°C. Stir and make sure that the paraffin is completely melted.
+4.  Heat the paraffin dispenser (SELECTA) to 63°C. Stir and make sure that the paraffin wax is completely melted. Keep the left dial (regulates the temperature when removing the wax at low position). Refer to the [manual](manuals/paraffin_dispenser_068646_ME.pdf){target="_blank"} to refill paraffin wax.
 
-5.  Dip in the fragment for **X** s and **shake off?**
+5.  Dip in the fragment for 2 s.
 
-6.  Weight after the wax cooled down (after about x sec) and note as `w1`.
+6.  After removal, rotate sample slowly for even distribution of the wax (10 revolutions within 2 s).
 
-7.  Use fingernails to scratch off parts without tissue (edges where fragment was cut), weight, and not as `w1_scratched`.
+7.  Let the wax cool down for at least 15 min, weight, and note as `w1` in metadata sheet.
 
-8.  Repeat steps 5 to 7 and note weight as `w2` and `w2_scratched`.
+8.  Use fingernails to scratch off parts without tissue (edges where fragment was cut), weight, and not as `w1_scratched`.
+
+9.  Repeat steps 5 to 7 and note weight as `w2` and `w2_scratched`.
