@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Tissue removal"
 ---
 
 ### Materials

@@ -1,8 +1,8 @@
 ---
-title: ""
+title: "Chlorophyll"
 ---
 
-## Chlorophyll Extraction
+## Extraction
 
 ### Materials
 
@@ -28,7 +28,7 @@ Chlorophyll is very unstable. Always keep samples on ice and as dark as possible
 
 4.  Extract chlorophyll for 24 h at 4 °C (Fridge Biomol 2). Keep samples wrapped in aluminium foil.
 
-## Chlorophyll Measurement
+## Measurement
 
 ### Overview {#overview}
 
