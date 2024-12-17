@@ -30,11 +30,11 @@ Work in batches of six samples at a time.
 
 3.  Transfer tissue slurry into a pre-weighted (taraed) 500 mL beaker. Note the weight to estimate the volume of the tissue slurry (`w1` in metadata sheet).
 
-4.  Homogenize tissue slurry for 30 - 60 s. Clean homogenizer with SSW and wipe dry between samples and clean with ethanol after use.
+4.  Homogenize tissue slurry for 40 s. Clean homogenizer with SSW and wipe dry between samples and clean with ethanol after use.
 
 5.  Immediately transfer 40 g tissue slurry into pre-weigh (taraed) 50 mL tube (note as `w2` in metadata sheet). Try to be exact to keep the centrifuge used later balanced. Store tubes with tissue slurry in fridge when preparing the remaining samples.
 
-6.  Centrifuge the 6 sample tubes using rotor 19676 for 20 min at 9,000 rpm at 4 °C.
+6.  Centrifuge the 6 50 mL-sample tubes using rotor 19676 for 20 min at 9,000 rpm at 4 °C. This separates the symbionts (pellet) from the host tissue (supernatant).
 
 7.  With a 1000 mL pipette, remove as much supernatant as possible without damaging the pellet. Vortex to re-suspend remaining tissue slurry.
 

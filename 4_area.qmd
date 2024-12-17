@@ -17,8 +17,7 @@ $$
 -   [ ] Yarn
 -   [ ] Paper for labels
 -   [ ] Scale
--   [ ] **Warm** thing with wax
--   [ ] **Tree**?
+-   [ ] Water bath with parrafin wax
 
 ### Method
 
@@ -37,5 +36,3 @@ $$
 7.  Use fingernails to scratch off parts without tissue (edges where fragment was cut), weight, and not as `w1_scratched`.
 
 8.  Repeat steps 5 to 7 and note weight as `w2` and `w2_scratched`.
-
-9.  **CLEAN WARM THING???**

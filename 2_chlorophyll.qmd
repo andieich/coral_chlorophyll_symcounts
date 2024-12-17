@@ -91,7 +91,7 @@ Follow these [steps](5_metadata.qmd) to enter the metadata (which sample is at w
 
 10. Remove cuvette from photometer, clean with acetone and Kimwipes and measure next sample.
 
-11. Repeat as described before for 10 samples (i.e. 20 measurements). Then, measure blank as described before (2x) and continue to measure samples.
+11. Repeat as described before for 10 samples (i.e. 20 measurements). Then, measure blank as described before (2x) and continue to measure samples. Take care not to damage the pellet.
 
 ::: callout-note
 If you do a mistake in the sequence of measurements, correct it accordingly in the table (see [Problems])
