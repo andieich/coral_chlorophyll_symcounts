@@ -9,7 +9,7 @@ format:
 
 An air gun is used to blow off the corals tissue in sterile filtrated seawater. The tissue slurry is collected in a zip-lock bag and transferred into a 50 mL tube. After centrifugation to remove excess water, the slurry is sub-sampled for chlorophyll extraction and Symbiodiniaceae counts.
 
-[Extract chlorophyll](2_chlorophyll.qmd)
+[Extract and measure chlorophyll](2_chlorophyll.qmd)
 
 Chlorophyll is extracted in acetone and the concentration measured with a photometer.
 
