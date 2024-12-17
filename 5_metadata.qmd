@@ -1,12 +1,12 @@
 ---
-title: ""
+title: "Metadata"
 ---
 
 ### Overview
 
 Type in all data in a Google Sheet. Like that, R can be used to easily blank-correct the measurements and normalize the chlorophyll concentration and Symbioniniaceae counts on the coral surface.
 
-<a href="https://docs.google.com/spreadsheets/d/1ORvxp1S-1TpO_f12Qnnd0LyK4phBG3kjY2a0tGh43uk/edit?usp=sharing" target="_blank">Here</a> is an empty metadata sheet, please copy it before entering data.
+[Here](https://docs.google.com/spreadsheets/d/1ORvxp1S-1TpO_f12Qnnd0LyK4phBG3kjY2a0tGh43uk/edit?usp=sharing){target="_blank"} is an empty metadata sheet, please copy it before entering data.
 
 There are three tabs:
 
