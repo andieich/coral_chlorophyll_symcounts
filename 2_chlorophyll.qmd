@@ -71,7 +71,7 @@ Follow these [steps](5_metadata.qmd) to enter the metadata (which sample is at w
 
 4.  Click on `Create experiment and read now`:
 
-    ![](images/Capture%20d'écran%202024-11-19%20161241.png){width="350"}
+    ![](images/create_experiment.png){width="350"}
 
 5.  At first, the photometer takes a background measurement without any cuvette inserted. Follow the instructions in the pop-up and click `OK`.
 
@@ -103,7 +103,7 @@ If you do a mistake in the sequence of measurements, correct it accordingly in t
 
 10. To export the data, click on `Export`.
 
-    ![](images/Capture%20d'écran%202024-11-19%20161812.png){width="350"}
+    ![](images/export.png){width="350"}
 
 11. Save data as `.txt` (default) in your folder and name it `YYYY_MM_DD_chl_adaptome_#.txt` (as described above).
 
