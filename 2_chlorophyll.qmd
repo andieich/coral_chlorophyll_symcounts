@@ -58,7 +58,7 @@ Follow these [steps](5_metadata.qmd) to enter the metadata (which sample is at w
 -   [ ] Acetone
 -   [ ] Kimwipes
 -   [ ] 1000 µL pipette & tips
--   [ ] BioTek **XXX**
+-   [ ] BioTek Epoch2 microplate reader
 -   [ ] Quartz cuvette (dark and shattered)
 
 ### Method
