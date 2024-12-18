@@ -48,7 +48,9 @@ The photometer will automatically measure the absorption at 663, 630, and 750 nm
 
 [BLK]{style="background-color: #80FFFE"} corresponds to blank measurements and [SPLXX]{style="background-color: #A6CAEE"} to samples.
 
-Follow these [steps](5_metadata.qmd) to enter the metadata (which sample is at which position, file names, etc).
+::: callout-note
+The photometer automatically blank-corrects the measurements which can lead to wrong measurements if the order of samples and blanks differs to the expected order. It is therefore important to note the actual order of the samples in the metadata sheet (described [here](5_metadata.qmd)).
+:::
 
 ### Materials
 
@@ -94,7 +96,7 @@ Follow these [steps](5_metadata.qmd) to enter the metadata (which sample is at w
 11. Repeat as described before for 10 samples (i.e. 20 measurements). Then, measure blank as described before (2x) and continue to measure samples. Take care not to damage the pellet.
 
 ::: callout-note
-If you do a mistake in the sequence of measurements, correct it accordingly in the table (see [Problems])
+If you do a mistake in the sequence of measurements, correct it accordingly in the metadata sheet.
 :::
 
 8.  When all samples are measured or after 43 samples, click on `Non` in pop-up window.
@@ -111,6 +113,3 @@ If you do a mistake in the sequence of measurements, correct it accordingly in t
 Backup your data each day you are measuring. Either upload the folder to Google Drive or save it on a USB key. Keep all data also on the computer.
 :::
 
-## Problems
-
-If the sequence of the measurements does not fit anymore to the pre-defined layout (see [plate overview](#plateoverview)), the automatic blank-correction in th ephotometer does not work anymore. The blank-correction will be done later in R. It is therefore important to change the `type` column for the corresponding positions (more details [here](5_metadata.qmd)).
