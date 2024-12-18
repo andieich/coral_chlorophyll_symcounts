@@ -4,26 +4,30 @@ title: "Symbiodiniaceae counts"
 
 ### Material
 
--   [ ] Counting chamber (Thoma) with glass cover
--   [ ] Ethanol 96%
+-   [ ] Hemacytometer (Neubauer improved - Bright-Line) with glass cover
+-   [ ] Ethanol 96% for cleaning
 -   [ ] Kimwipes
--   [ ] Microscope with objective lens 20X
--   [ ] 50 µL pipette and tips **CHECK!**
+-   [ ] 10 µL pipette and tips
+-   [ ] Microscope with objective lens 20X or 40X
 
 ### Method
 
-1.  Clean haemocytometer with distilled water and Kimwipes.
+1.  Clean hemacytometer with distilled water or ethanol and Kimwipes.
 
-2.  Vortex sample for 15 s.
+2.  Two chambers exist on the hemacytometer (red circle below). Place a coverslip covering both chambers. Vortex sample for 15 s and add 10 µL sample solution at the entry points for each chamber (yellow triangles).
 
-3.  Add 10 µL sample solution into each of the 2 chamber in the haemocytometer.
+    ![](images/chamber.png){width="350"}
 
-4.  Count 10 of the
+3.  Count all Symbiodiniaceae cells in the central grid marked in orange below. Count the cells in both chambers and note in the `c#` columns in the metadata sheet.
 
-5.  
+    ![](images/counting1.png){width="350"}
 
-6.   If more than **XXX**, dilute sample, e.g. 200 mL sample (`V_zoox` in metadata sheet) with 800 µL SST (`V_sw`).
+4.  If a cell touches the border (3 lines) on the top or right side, include it in the counts (green cells below, only the central grid is shown); if it touches the border at the bottom or left side, do not include it in the counts (red cells below).
 
-7.  Count Symbiodiniaceae in both chambers. Repeat above steps in total three times per samples (6 count replicates per sample).
+    ![](images/counting2.png){width="350"}
 
-8.  Between each count, clean haemocytometer with ethanol and Kimwipes.
+5.  If you can estimate that more than 100 cells are in the central grid, dilute sample and note dilution, e.g. 200 mL sample (`V_zoox` in metadata sheet) with 800 µL SST (`V_sw`).
+
+6.  Repeat above steps in total three times per samples, yielding 6 count replicates per sample.
+
+7.  After each count, clean hemacytometer with ethanol and Kimwipes.
