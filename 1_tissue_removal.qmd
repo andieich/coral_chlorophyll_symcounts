@@ -28,7 +28,7 @@ Work in batches of six samples at a time.
 
 2.  Store the skeleton in original sample bag in -20°C freezer until surface measurement.
 
-3.  Transfer tissue slurry into a pre-weighted (taraed) 500 mL beaker. Note the weight to estimate the volume of the tissue slurry (`w1` in metadata sheet).
+3.  Transfer tissue slurry into a pre-weighted (taraed) 500 mL beaker. Note the weight to estimate the volume of the tissue slurry (`w1` in metadata sheet). This will be used to estimate the total volume of the tissue slurry.
 
 4.  Homogenize tissue slurry for 40 s. Clean homogenizer with SSW and wipe dry between samples and clean with ethanol after use.
 
