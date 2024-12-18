@@ -172,24 +172,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="material" class="level3">
 <h3 class="anchored" data-anchor-id="material">Material</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Counting chamber (Thoma) with glass cover</label></li>
-<li><label><input type="checkbox">Ethanol 96%</label></li>
+<li><label><input type="checkbox">Hemacytometer (Neubauer improved - Bright-Line) with glass cover</label></li>
+<li><label><input type="checkbox">Ethanol 96% for cleaning</label></li>
 <li><label><input type="checkbox">Kimwipes</label></li>
-<li><label><input type="checkbox">Microscope with objective lens 20X</label></li>
-<li><label><input type="checkbox">50 µL pipette and tips <strong>CHECK!</strong></label></li>
+<li><label><input type="checkbox">10 µL pipette and tips</label></li>
+<li><label><input type="checkbox">Microscope with objective lens 20X or 40X</label></li>
 </ul>
 </section>
 <section id="method" class="level3">
 <h3 class="anchored" data-anchor-id="method">Method</h3>
 <ol type="1">
-<li><p>Clean haemocytometer with distilled water and Kimwipes.</p></li>
-<li><p>Vortex sample for 15 s.</p></li>
-<li><p>Add 10 µL sample solution into each of the 2 chamber in the haemocytometer.</p></li>
-<li><p>Count 10 of the</p></li>
-<li></li>
-<li><p>If more than <strong>XXX</strong>, dilute sample, e.g.&nbsp;200&nbsp;mL sample (<code>V_zoox</code> in metadata sheet) with 800 µL SST (<code>V_sw</code>).</p></li>
-<li><p>Count Symbiodiniaceae in both chambers. Repeat above steps in total three times per samples (6 count replicates per sample).</p></li>
-<li><p>Between each count, clean haemocytometer with ethanol and Kimwipes.</p></li>
+<li><p>Clean hemacytometer with distilled water or ethanol and Kimwipes.</p></li>
+<li><p>Two chambers exist on the hemacytometer (red circle below). Place a coverslip covering both chambers. Vortex sample for 15 s and add 10 µL sample solution at the entry points for each chamber (yellow triangles).</p>
+<p><img src="images/chamber.png" class="img-fluid" width="350"></p></li>
+<li><p>Count all Symbiodiniaceae cells in the central grid marked in orange below. Count the cells in both chambers and note in the <code>c#</code> columns in the metadata sheet.</p>
+<p><img src="images/counting1.png" class="img-fluid" width="350"></p></li>
+<li><p>If a cell touches the border (3 lines) on the top or right side, include it in the counts (green cells below, only the central grid is shown); if it touches the border at the bottom or left side, do not include it in the counts (red cells below).</p>
+<p><img src="images/counting2.png" class="img-fluid" width="350"></p></li>
+<li><p>If you can estimate that more than 100 cells are in the central grid, dilute sample and note dilution, e.g.&nbsp;200&nbsp;mL sample (<code>V_zoox</code> in metadata sheet) with 800&nbsp;µL SST (<code>V_sw</code>).</p></li>
+<li><p>Repeat above steps in total three times per samples, yielding 6 count replicates per sample.</p></li>
+<li><p>After each count, clean hemacytometer with ethanol and Kimwipes.</p></li>
 </ol>
 
 
@@ -623,7 +625,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Andreas Eich 21.11.2024</p>
+<p>Andreas Eich 17.12.2024</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
