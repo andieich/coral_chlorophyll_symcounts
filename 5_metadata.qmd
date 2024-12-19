@@ -36,9 +36,9 @@ To ensure that the R Script is working correctly:
 
 -   **date_extraction:** The date when the sample was extracted. Double click for calender view. As format, `DD/MM/YYYY` is expected. There will be a warning if the entry is not a correctly-formatted date.
 
--   **W1:** The weight of the tissue slurry in g (after airbrushing). There will be a warning if something else than a number was entered. Leave cells corresponding to blank measurements empty.
+-   **w_slurry1:** The weight of the tissue slurry in g (after airbrushing). There will be a warning if something else than a number was entered. Leave cells corresponding to blank measurements empty.
 
--   **W2:** The weight of the liquid in the falcon tube in g. There will be a warning if something else than a number was entered. Leave cells corresponding to blank measurements empty.
+-   **w_slurry2:** The weight of the liquid in the falcon tube in g. There will be a warning if something else than a number was entered. Leave cells corresponding to blank measurements empty.
 
 -   **date_chl_measurement:** The date when the chlorophyll concentration of the sample was measured. Double click for calender view. As format, `DD/MM/YYYY` is expected. There will be a warning if the entry is not a correctly-formatted date.
 
