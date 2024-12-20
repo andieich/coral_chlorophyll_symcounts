@@ -8,7 +8,7 @@ website:
   favicon: images/logo.png
   page-footer: 
     left: "by Andreas Eich"
-    right: "Version from 17.12.2024"
+    right: "Version from 20.12.2024"
   sidebar:
     title: "CORAL protocols"
     background: light
