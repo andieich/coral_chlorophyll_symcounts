@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _site
+
   
 website:
   search: false
@@ -32,12 +32,36 @@ website:
         href: 5_metadata.qmd
 format:
   html:
+    output-dir: _site
     theme: [lux, style/style.css]
     toc: true
     toc-depth: 4
     toc-title: "On this page"
     toc-location: right
     smooth-scroll: true
+    
+  pdf:
+    output-dir: pdf_output
+    papersize: "A4"
+    geometry:
+      - top=15mm
+      - left=15mm
+      - right=15mm
+      - bottom=15mm
+    toc: false
+    number-sections: false
+    colorlinks: true
+    # Custom fonts
+    mainfont: "Linux Libertine O"
+    fontsize: "10pt"
+    mainfontoptions:
+      - "Numbers=Proportional"
+      - "Numbers=OldStyle"
+    sansfont: "Noto Sans"
+    mathfont: "Libertinus Math"
+    knitr:
+      opts_chunk:
+        dev: "cairo_pdf"
 
 editor: visual
 bibliography: bib/references.bib
