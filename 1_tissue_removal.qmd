@@ -27,7 +27,7 @@ Work in batches of six samples at a time.
 
 1.  Turn on centrifuge so it has enough time to cool down to 4°C.
 
-2.  Transfer coral fragment into zip-lock bag and add enough SSW to immerse sample. Use an air gun to remove all coral tissue. Afterwards, the white coral skeleton should be visible. Rinse bag with with as little SSW as possible.
+2.  Transfer coral fragment into zip-lock bag and add enough SSW to immerse sample. Use an air gun to remove all coral tissue. Afterwards, the white coral skeleton should be visible. Rinse bag with with as little SSW as possible. Bags can be reused when cleaned properly.
 
 3.  Store the skeleton in original sample bag in -20°C freezer until surface measurement.
 
