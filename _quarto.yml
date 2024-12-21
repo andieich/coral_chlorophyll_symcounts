@@ -51,7 +51,7 @@ format:
       - right=15mm
       - bottom=15mm
     toc: false
-    number-sections: false
+    number-sections: true
     colorlinks: true
     # Custom fonts
     mainfont: "Linux Libertine O"
