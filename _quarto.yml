@@ -43,6 +43,8 @@ format:
     smooth-scroll: true
     
   pdf:
+    fig-pos: 'h'
+    tab-pos: 'h'
     output-dir: pdf_output
     papersize: "A4"
     geometry:

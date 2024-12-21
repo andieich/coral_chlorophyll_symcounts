@@ -57,7 +57,6 @@ library(gt)
 ```{r}
 #| echo: false
 #| warning: false
-#| fig.pos: "H"
 dat_chla <- normalise_chla_per_area(dat_overview,
                                     path_to_biotekfolder = "/Users/andi/Desktop/test_files")
 
@@ -70,7 +69,6 @@ head(dat_chla, n = 10)
 
 ```{r}
 #| echo: false
-#| tab.pos: "H"
 dat_chla %>% 
   head(n = 10) %>% 
   gt()
@@ -86,7 +84,6 @@ head(dat_counts, n = 10)
 
 ```{r}
 #| echo: false
-#| tab.pos: "H"
 dat_counts <- normalise_counts_per_area(dat_overview)
 dat_counts %>% 
   head(n = 10) %>% 
