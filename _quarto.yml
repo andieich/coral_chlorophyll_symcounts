@@ -64,8 +64,6 @@ format:
     knitr:
       opts_chunk:
         dev: "cairo_pdf"
-        fig.pos: "H"
-        tab.pos: "H"
         dpi: 300
 
 editor: visual
