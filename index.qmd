@@ -24,3 +24,7 @@ The chlorophyll concentration and Symbiodiniaceae counts have to be normalized t
 [Metadata](5_metadata.qmd)
 
 Enter the data on samples, dates, file names, etc in a Google Sheet to allow easy processing with R.
+
+[Calculations](6_calculations.qmd)
+
+Use `R` functions to calculate chlorophyll a concentration and Symbiodiniaceae counts normalized for the surface.

@@ -30,6 +30,8 @@ website:
           href: 4_area.qmd
       - text: "Metadata"
         href: 5_metadata.qmd
+      - text: "Calculations"
+        href: 6_calculations.qmd
 format:
   html:
     output-dir: _site
