@@ -51,7 +51,7 @@ format:
       - right=15mm
       - bottom=15mm
     toc: false
-    number-sections: true
+    number-sections: false
     colorlinks: true
     # Custom fonts
     mainfont: "Linux Libertine O"
@@ -64,6 +64,9 @@ format:
     knitr:
       opts_chunk:
         dev: "cairo_pdf"
+        fig.pos: "H"
+        tab.pos: "H"
+        dpi: 300
 
 editor: visual
 bibliography: bib/references.bib
