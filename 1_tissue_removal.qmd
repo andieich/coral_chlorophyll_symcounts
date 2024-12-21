@@ -15,7 +15,7 @@ title: "Tissue removal"
 -   [ ] 1000 µL pipette and tips without filter (3 tips per sample)
 -   [ ] Vortexter
 -   [ ] Ethanol 96% or 70% for cleaning
--   [ ] Centrifuge with rotor 19676
+-   [ ] Centrifuge with rotor 19776
 -   [ ] Aluminium foil
 -   [ ] Eppendrof tubes (2 per sample) & rack
 
