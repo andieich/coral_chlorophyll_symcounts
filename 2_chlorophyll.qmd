@@ -24,7 +24,7 @@ Chlorophyll is very unstable. Always keep samples on ice and as dark as possible
 
 2.  Remove supernatant with 1,000 µL pipette. Carefully remove remaining drops of supernatant with Kimwipes.
 
-3.  Add 1,000 µL acetone and close tube. Homogenize with pipette and vortex for 15 s. Do not re-use tips.
+3.  Add 1,000 µL acetone and close tube. Homogenize with pipette and vortex for 15 s. Do not re-use tips. A tissue grinding pestle can help to homogenize the pellet. Clean pestle with EtOH between samples.
 
 4.  Extract chlorophyll for 24 h at 4 °C (Fridge Biomol 2). Keep samples wrapped in aluminium foil.
 
@@ -112,4 +112,3 @@ If you do a mistake in the sequence of measurements, correct it accordingly in t
 ::: callout-caution
 Backup your data each day you are measuring. Either upload the folder to Google Drive or save it on a USB key. Keep all data also on the computer.
 :::
-
