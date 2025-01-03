@@ -8,7 +8,7 @@ website:
   favicon: images/logo.png
   page-footer: 
     left: "by Andreas Eich"
-    right: "Version from 20.12.2024"
+    right: "Version from 02.01.2025"
   sidebar:
     title: "CORAL protocols"
     background: light
@@ -43,15 +43,11 @@ format:
     smooth-scroll: true
     
   pdf:
-    fig-pos: 'h'
-    tab-pos: 'h'
+    fig-pos: 'H'
+    tab-pos: 'H'
     output-dir: pdf_output
-    papersize: "A4"
-    geometry:
-      - top=15mm
-      - left=15mm
-      - right=15mm
-      - bottom=15mm
+    papersize: a4paper
+
     toc: false
     number-sections: false
     colorlinks: true
