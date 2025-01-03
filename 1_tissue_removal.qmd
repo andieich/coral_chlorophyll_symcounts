@@ -33,7 +33,7 @@ Work in batches of six samples at a time.
 
 4.  Transfer tissue slurry into a pre-weighted (taraed) 500 mL beaker. Note the weight to estimate the volume of the tissue slurry (`w_slurry1` in metadata sheet). This will be used to estimate the total volume of the tissue slurry.
 
-5.  Homogenize tissue slurry for 40 s. Clean homogenizer by runing it in beaker filled with SSW and wipe dry between samples. After use, clean homogenizer by running it in freshwater.
+5.  Homogenize tissue slurry for 40 s. Clean homogenizer by running it in beaker filled with SSW and wipe dry between samples. After use, clean homogenizer by running it in freshwater.
 
 6.  Immediately transfer 40 g tissue slurry into pre-weigh (taraed) 50 mL tube (note as `w_slurry2` in metadata sheet). Try to be exact to keep the centrifuge used later balanced. Store tubes with tissue slurry in fridge when preparing the remaining samples.
 
@@ -45,4 +45,4 @@ Work in batches of six samples at a time.
 
 10. Add 3 mL SSW (1 mL pipette, tip can be re-used when not immersed) to all tubes and vortex until solution is homogeneous.
 
-11. Divide solution for chlorophyll analysis (1 mL) and Symbiodiniaceae counts (1 mL) into Eppendorf tubes. Before pipetting, move liqid in pipette up and down to homogenise solution even more. Store all samples at 4°C, keep chlorophyll samples wrapped in aluminium foil. Start chlorophyll extraction at the same day.
+11. Divide solution for chlorophyll analysis (1 mL) and Symbiodiniaceae counts (1 mL) into Eppendorf tubes. Before pipetting, move liquid in pipette up and down to homogenize solution even more. Store all samples at 4°C, keep chlorophyll samples wrapped in aluminium foil. Start chlorophyll extraction at the same day.
