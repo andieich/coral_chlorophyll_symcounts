@@ -43,6 +43,6 @@ Work in batches of six samples at a time.
 
 9.  Centrifuge for 10 min with the other settings as in step 6. Repeat steps 6 - 7 until all supernatant is be removed.
 
-10. Add 3 mL SSW (1 mL pipette, tip can be re-used when not immersed) to alltubes and vortex until solution is homogeneous.
+10. Add 3 mL SSW (1 mL pipette, tip can be re-used when not immersed) to all tubes and vortex until solution is homogeneous.
 
 11. Divide solution for chlorophyll analysis (1 mL) and Symbiodiniaceae counts (1 mL) into Eppendorf tubes. Before pipetting, move liqid in pipette up and down to homogenise solution even more. Store all samples at 4°C, keep chlorophyll samples wrapped in aluminium foil. Start chlorophyll extraction at the same day.
