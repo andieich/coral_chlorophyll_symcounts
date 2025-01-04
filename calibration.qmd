@@ -1,0 +1,63 @@
+---
+title: "Calibration"
+date: 2025-01-03
+bibliography: references.bib
+author: "Andreas Eich"
+---
+
+The surface area of the fragments is estimated with the increase in weight of the fragments with one and two layers of paraffin wax. The first layer is used to close all pores improving an even distribution of the second wax layer. In the literature, different conversion factors exist (e.g. @veal2010a).
+
+To better reflect the actual conditions in the lab, I calculated my own conversion factors. To do so, I ground coral fragments (*Pocillopora* spec.) to blocks of different surface areas (see [raw data](data/2025_01_03_weight_area_calibration.csv)). Each side of the blocks was scanned and the surface calculated in ImageJ.
+
+![](images/a-01.png){width="900"}
+
+Then, I coated the blocks with paraffin wax as described in the [protocol](4_area.qmd).
+
+The increase in weight resembled a linear relationship. Besides the slope, also the intercept is used for the conversion to consider droplets of paraffin wax [@veal2010a].
+
+```{r}
+#| include: false
+library(here)
+library(tidyverse)
+
+# Read data
+dat_calib <-  read.csv(here("data/2025_01_03_weight_area_calibration.csv"))
+
+# Calculate difference
+dat_calib <- dat_calib %>% 
+  mutate(diff = w_2 - w_1,
+         surface_area_cm2 = surface_area_mm2 / 100)
+
+```
+
+```{r}
+#Model
+mod <- lm(surface_area_cm2 ~ diff, data = dat_calib)
+
+model_summary <- paste0(" y = ", round(coef(mod)[1], 2), " + ", round(coef(mod)[2], 2), "x\n",
+                        " adjusted R² = ", round(summary(mod)$adj.r.squared, 3))
+
+
+pred_calib <- data.frame(diff = seq(0,
+                                    max(dat_calib$diff*1.2),
+                                    length = 100))
+
+pred_calib <- bind_cols(predict(mod, newdata = pred_calib, se.fit = T),
+                        pred_calib)
+
+
+dat_calib %>% 
+  ggplot(aes(x = diff))+
+  geom_ribbon(data = pred_calib, aes(ymin = fit - se.fit, ymax = fit + se.fit),
+              fill = "darkred", alpha = .2)+
+  geom_line(data = pred_calib, aes(y = fit),
+              col = "darkred")+
+  geom_point(aes(y = surface_area_cm2),
+             fill = "darkblue", size = 3, shape = 21, col = "white")+
+  annotate(geom = "text",x = -Inf, y = Inf, label = model_summary,
+            hjust = 0, vjust = 1)+
+  labs(y = expression("Surface area in"~cm^2), x = expression(Delta~"Weight in g"))+
+  theme_classic()
+```
+
+In the package used for the surface area normalization of chlorophyll and Symbiodiniaceae counts, either the conversion factor of @veal2010a can be used or the factors calculated here.
