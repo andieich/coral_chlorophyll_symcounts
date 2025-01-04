@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Andreas Eich">
+<meta name="dcterms.date" content="2025-01-03">
 
-<title>Tissue removal</title>
+<title>Calibration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +22,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -56,116 +112,41 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked">
+<body>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_tissue_removal.html">Steps</a></li><li class="breadcrumb-item"><a href="./1_tissue_removal.html">Tissue removal</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
-</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">CORAL protocols</a> 
-    </div>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Steps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./1_tissue_removal.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Tissue removal</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2_chlorophyll.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chlorophyll</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3_symb_counts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Counts</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./4_area.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Area</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./5_metadata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Metadata</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./6_calculations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Calculations</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#materials" id="toc-materials" class="nav-link active" data-scroll-target="#materials">Materials</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="1_tissue_removal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
-    </div>
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="calibration.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_tissue_removal.html">Steps</a></li><li class="breadcrumb-item"><a href="./1_tissue_removal.html">Tissue removal</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tissue removal</h1>
+<h1 class="title">Calibration</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Andreas Eich </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 3, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -175,58 +156,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="materials" class="level3">
-<h3 class="anchored" data-anchor-id="materials">Materials</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">SCUBA tank and air gun</label></li>
-<li><label><input type="checkbox">Zip-lock bags</label></li>
-<li><label><input type="checkbox">Icebox with ice</label></li>
-<li><label><input type="checkbox">SSW</label></li>
-<li><label><input type="checkbox">Tissue homogenizer</label></li>
-<li><label><input type="checkbox">500 mL beaker</label></li>
-<li><label><input type="checkbox">Scale</label></li>
-<li><label><input type="checkbox">12x 50 mL tubes (2 sets of 6)</label></li>
-<li><label><input type="checkbox">1000 µL pipette and tips without filter (3 tips per sample)</label></li>
-<li><label><input type="checkbox">Vortexter</label></li>
-<li><label><input type="checkbox">Ethanol 96% or 70% for cleaning</label></li>
-<li><label><input type="checkbox">Centrifuge with rotor 19776</label></li>
-<li><label><input type="checkbox">Aluminium foil</label></li>
-<li><label><input type="checkbox">Eppendrof tubes (2 per sample) &amp; rack</label></li>
-</ul>
-</section>
-<section id="method" class="level3">
-<h3 class="anchored" data-anchor-id="method">Method</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>The surface area of the fragments is estimated with the increase in weight of the fragments with one and two layers of paraffin wax. The first layer is used to close all pores improving an even distribution of the second wax layer. In the literature, different conversion factors exist (e.g. <span class="citation" data-cites="veal2010a">Veal et al. (<a href="#ref-veal2010a" role="doc-biblioref">2010</a>)</span>).</p>
+<p>To better reflect the actual conditions in the lab, I calculated my own conversion factors. To do so, I ground coral fragments (<em>Pocillopora</em> spec.) to blocks of different surface areas (see <a href="data/2025_01_03_weight_area_calibration.csv">raw data</a>). Each side of the blocks was scanned and the surface calculated in ImageJ.</p>
+<p><img src="images/a-01.png" class="img-fluid" width="900"></p>
+<p>Then, I coated the blocks with paraffin wax as described in the <a href="./4_area.html">protocol</a>.</p>
+<p>The increase in weight resembled a linear relationship. Besides the slope, also the intercept is used for the conversion to consider droplets of paraffin wax <span class="citation" data-cites="veal2010a">(<a href="#ref-veal2010a" role="doc-biblioref">Veal et al., 2010</a>)</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Model</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(surface_area_cm2 <span class="sc">~</span> diff, <span class="at">data =</span> dat_calib)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>model_summary <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">" y = "</span>, <span class="fu">round</span>(<span class="fu">coef</span>(mod)[<span class="dv">1</span>], <span class="dv">2</span>), <span class="st">" + "</span>, <span class="fu">round</span>(<span class="fu">coef</span>(mod)[<span class="dv">2</span>], <span class="dv">2</span>), <span class="st">"x</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                        <span class="st">" adjusted R² = "</span>, <span class="fu">round</span>(<span class="fu">summary</span>(mod)<span class="sc">$</span>adj.r.squared, <span class="dv">3</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>pred_calib <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">diff =</span> <span class="fu">seq</span>(<span class="dv">0</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                                    <span class="fu">max</span>(dat_calib<span class="sc">$</span>diff<span class="sc">*</span><span class="fl">1.2</span>),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">length =</span> <span class="dv">100</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>pred_calib <span class="ot">&lt;-</span> <span class="fu">bind_cols</span>(<span class="fu">predict</span>(mod, <span class="at">newdata =</span> pred_calib, <span class="at">se.fit =</span> T),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                        pred_calib)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>dat_calib <span class="sc">%&gt;%</span> </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> diff))<span class="sc">+</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data =</span> pred_calib, <span class="fu">aes</span>(<span class="at">ymin =</span> fit <span class="sc">-</span> se.fit, <span class="at">ymax =</span> fit <span class="sc">+</span> se.fit),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>              <span class="at">fill =</span> <span class="st">"darkred"</span>, <span class="at">alpha =</span> .<span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> pred_calib, <span class="fu">aes</span>(<span class="at">y =</span> fit),</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>              <span class="at">col =</span> <span class="st">"darkred"</span>)<span class="sc">+</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> surface_area_cm2),</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>             <span class="at">fill =</span> <span class="st">"darkblue"</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">col =</span> <span class="st">"white"</span>)<span class="sc">+</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="at">geom =</span> <span class="st">"text"</span>,<span class="at">x =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">y =</span> <span class="cn">Inf</span>, <span class="at">label =</span> model_summary,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">vjust =</span> <span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="fu">expression</span>(<span class="st">"Surface area in"</span><span class="sc">~</span>cm<span class="sc">^</span><span class="dv">2</span>), <span class="at">x =</span> <span class="fu">expression</span>(Delta<span class="sc">~</span><span class="st">"Weight in g"</span>))<span class="sc">+</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="calibration_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Note
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Work in batches of six samples at a time.</p>
-</div>
-</div>
-<ol type="1">
-<li><p>Turn on centrifuge so it has enough time to cool down to 4°C.</p></li>
-<li><p>Transfer coral fragment into zip-lock bag and add enough SSW to immerse sample. Use an air gun to remove all coral tissue. Afterwards, the white coral skeleton should be visible. Rinse bag with with as little SSW as possible. Bags can be reused when cleaned properly.</p></li>
-<li><p>Store the skeleton in original sample bag in -20°C freezer until surface measurement.</p></li>
-<li><p>Transfer tissue slurry into a pre-weighted (taraed) 500 mL beaker. Note the weight to estimate the volume of the tissue slurry (<code>w_slurry1</code> in metadata sheet). This will be used to estimate the total volume of the tissue slurry.</p></li>
-<li><p>Homogenize tissue slurry for 40 s. Clean homogenizer by running it in beaker filled with SSW and wipe dry between samples. After use, clean homogenizer by running it in freshwater.</p></li>
-<li><p>Immediately transfer 40 g tissue slurry into pre-weigh (taraed) 50 mL tube (note as <code>w_slurry2</code> in metadata sheet). Try to be exact to keep the centrifuge used later balanced. Store tubes with tissue slurry in fridge when preparing the remaining samples.</p></li>
-<li><p>Centrifuge the 6 50 mL-sample tubes using rotor 19676 for 20 min at 12,000 rpm at 4 °C. This separates the symbionts (pellet) from the host tissue (supernatant).</p></li>
-<li><p>With a 1000 mL pipette, remove as much supernatant as possible without damaging the pellet. Vortex to re-suspend remaining tissue slurry.</p></li>
-<li><p>Centrifuge for 10 min with the other settings as in step 6. Repeat steps 6 - 7 until all supernatant is be removed.</p></li>
-<li><p>Add 3 mL SSW (1 mL pipette, tip can be re-used when not immersed) to all tubes and vortex until solution is homogeneous.</p></li>
-<li><p>Divide solution for chlorophyll analysis (1 mL) and Symbiodiniaceae counts (1 mL) into Eppendorf tubes. Before pipetting, move liquid in pipette up and down to homogenize solution even more. Store all samples at 4°C, keep chlorophyll samples wrapped in aluminium foil. Start chlorophyll extraction at the same day.</p></li>
-</ol>
+<p>In the package used for the surface area normalization of chlorophyll and Symbiodiniaceae counts, either the conversion factor of <span class="citation" data-cites="veal2010a">Veal et al. (<a href="#ref-veal2010a" role="doc-biblioref">2010</a>)</span> can be used or the factors calculated here.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-veal2010a" class="csl-entry" role="listitem">
+Veal, C. J., Carmi, M., Fine, M., &amp; Hoegh-Guldberg, O. (2010). Increasing the accuracy of surface area estimation using single wax dipping of coral fragments. <em>Coral Reefs</em>, <em>29</em>(4), 893–897. <a href="https://doi.org/10.1007/s00338-010-0647-9">https://doi.org/10.1007/s00338-010-0647-9</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -227,11 +227,15 @@ window.Quarto = {
 
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>The chlorophyll concentration and Symbiodiniaceae counts have to be normalized to the coral surface (living tissue). The surface area is estimated with the difference of the weight of the coral fragment before and after immersion in paraffin wax. Each sample is immersed two times in the wax: the first time to close all pores and the second time for the actual surface estimation. Each time, wax at parts without tissue (the cut sides) have to be scratched off. The tissue surface is calculated with the formula in <span class="citation" data-cites="veal2010">(<a href="#ref-veal2010" role="doc-biblioref">Veal et al., 2010</a>)</span>:</p>
+<p>The chlorophyll concentration and Symbiodiniaceae counts have to be normalized to the coral surface (living tissue). The surface area is estimated with the difference of the weight of the coral fragment before and after immersion in paraffin wax. Each sample is immersed two times in the wax: the first time to close all pores and the second time for the actual surface estimation. Each time, wax at parts without tissue (the cut sides) have to be scratched off. The tissue surface is estimated with conversion factors based on custom-made calibration blocks (see <a href="./calibration.html">here</a> for more info) with the formula</p>
+<p><span class="math display">\[
+A = 0.52 + 43.6 * \Delta w
+\]</span></p>
+<p>, where <span class="math inline">\(A\)</span> is the surface area in <span class="math inline">\(cm^2\)</span> and <span class="math inline">\(\Delta w\)</span> the the increase in weight in g between the first and second immersion.</p>
+<p>Alternatively, the conversion factor in <span class="citation" data-cites="veal2010">Veal et al. (<a href="#ref-veal2010" role="doc-biblioref">2010</a>)</span> can be used:</p>
 <p><span class="math display">\[
 A = 34.32 * \Delta w
 \]</span></p>
-<p>, where <span class="math inline">\(A\)</span> is the surface area in <span class="math inline">\(cm^2\)</span> and <span class="math inline">\(\Delta w\)</span> the the increase in weight in g between the first and second immersion.</p>
 </section>
 <section id="materials" class="level3">
 <h3 class="anchored" data-anchor-id="materials">Materials</h3>
@@ -250,7 +254,7 @@ A = 34.32 * \Delta w
 <li><p>Weight fragment and note as <code>w_initial</code> in metadata sheet.</p></li>
 <li><p>Heat the paraffin dispenser (SELECTA) to 63°C. Stir and make sure that the paraffin wax is completely melted. Keep the left dial (regulates the temperature when removing the wax at low position). Refer to the <a href="manuals/paraffin_dispenser_068646_ME.pdf" target="_blank">manual</a> to refill paraffin wax.</p></li>
 <li><p>Dip in the fragment for 2 s.</p></li>
-<li><p>After removal, rotate sample slowly for even distribution of the wax (10 revolutions within 2 s).</p></li>
+<li><p>After removal, rotate sample by turning the yarn for about 3 s.</p></li>
 <li><p>Let the wax cool down for at least 15 min, weight, and note as <code>w1</code> in metadata sheet.</p></li>
 <li><p>Use fingernails to scratch off parts without tissue (edges where fragment was cut), weight, and not as <code>w1_scratched</code>.</p></li>
 <li><p>Repeat steps 5 to 7 and note weight as <code>w2</code> and <code>w2_scratched</code>.</p></li>
@@ -695,7 +699,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Version from 02.01.2025</p>
+<p>Version from 03.01.2025</p>
 </div>
   </div>
 </footer>
