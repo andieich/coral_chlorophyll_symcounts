@@ -31,7 +31,7 @@ dat_calib <- dat_calib %>%
 ```
 
 ```{r}
-#| include: false
+#| echo: false
 #Model
 mod <- lm(surface_area_cm2 ~ diff, data = dat_calib)
 
