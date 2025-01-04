@@ -15,7 +15,7 @@ The current version is `{r} packageVersion("coralchlo")`.
 
 After installation, you can load the package and download the metadata sheet. During this the import of the sheet, some basic test are done to ensure it was filled out correctly and that the values make sense.
 
-Additionally, the surface area is estimated from the increase in weight with the additional layer of paraffin wax. Different conversion factors can be used. Either a value from the literature from @veal2010, or conversion factors based on custom-made calibration blocks (see [here](calibration.qmd) for more info). The method can be selected in the `read_metadata()` function with `method = "veal"` or `method = "criobe"`. The default selection is `"criobe"`.
+Additionally, the surface area is estimated from the increase in weight with the additional layer of paraffin wax. Different conversion factors can be used. Either a value from the literature from @veal2010, or conversion factors based on custom-made calibration blocks (see [here](calibration.qmd){target="_blank"} for more info). The method can be selected in the `read_metadata()` function with `method = "veal"` or `method = "criobe"`. The default selection is `"criobe"`.
 
 ```{r}
 #| eval: false
