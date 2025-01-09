@@ -33,7 +33,7 @@ $$
 
 3.  Weight fragment and note as `w_initial` in metadata sheet.
 
-4.  Heat the paraffin dispenser (SELECTA) to 63°C. Stir and make sure that the paraffin wax is completely melted. Keep the left dial (regulates the temperature when removing the wax at low position). Refer to the [manual](manuals/paraffin_dispenser_068646_ME.pdf){target="_blank"} to refill paraffin wax.
+4.  Heat the paraffin dispenser (SELECTA) to 63°C (takes about 40 min). Stir and make sure that the paraffin wax is completely melted. Keep the left dial (regulates the temperature when removing the wax at low position). Refer to the [manual](manuals/paraffin_dispenser_068646_ME.pdf){target="_blank"} to refill paraffin wax.
 
 5.  Dip in the fragment for 2 s.
 
