@@ -68,13 +68,7 @@ To ensure that the R Script is working correctly:
 
 -   **sampleID**, **bag number**, and **type**: These columns will be filled out automatically for rows in which `sample` was selected as type in the tab `1.Overview&Chl`. Do not edit these columns.
 
--   **w_initial:** The weight of the fragment (and rope) in g before any wax was added. There will be a warning if something else than a number was entered.
-
--   **w1:** The weight of the fragment after the first dip in wax. There will be a warning if something else than a number was entered.
-
 -   **w1_scratched:** The weight of the fragment after the the wax of parts without tissue was removed. There will be a warning if something else than a number was entered.
-
--   **w2:** The weight of the fragment after the second dip in wax. There will be a warning if something else than a number was entered.
 
 -   **w2_scratched:** The weight of the fragment after the the wax of the second dip of parts without tissue was removed. There will be a warning if something else than a number was entered.
 
