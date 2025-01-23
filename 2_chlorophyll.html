@@ -274,11 +274,13 @@ Caution
 <h2 class="anchored" data-anchor-id="measurement">Measurement</h2>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>The chlorophyll concentration (<span class="math inline">\(µg~mL^{-1}\)</span>) is calculated based on the formulas given in <span class="citation" data-cites="jeffrey1975">(<a href="#ref-jeffrey1975" role="doc-biblioref">Jeffrey &amp; Humphrey, 1975</a>)</span>:</p>
+<p>The chlorophyll <em>a</em> and <em>c2</em> concentrations (<span class="math inline">\(µg~mL^{-1}\)</span>) are calculated based on the formulas given in <span class="citation" data-cites="jeffrey1975">(<a href="#ref-jeffrey1975" role="doc-biblioref">Jeffrey &amp; Humphrey, 1975</a>)</span>:</p>
 <p><span class="math display">\[
 \text{Chlorophyll}~a = 11.43 \frac{A_{663} - A_{750}}{PL}  – 0.64\frac{A_{630} - A_{750}}{PL}
 \]</span></p>
-<p>, where <span class="math inline">\(A_{663}\)</span>, <span class="math inline">\(A_{630}\)</span>, and <span class="math inline">\(A_{750}\)</span> is the absorption at 663, 630, and 750 nm, and <span class="math inline">\(PL\)</span> the path length of the cuvette (1 cm).</p>
+<p><span class="math display">\[
+\text{Chlorophyll}~c2 = 27.09 \frac{A_{630} - A_{750}}{PL}  – 3.63\frac{A_{663} - A_{750}}{PL}
+\]</span> , where <span class="math inline">\(A_{663}\)</span>, <span class="math inline">\(A_{630}\)</span>, and <span class="math inline">\(A_{750}\)</span> is the absorption at 663, 630, and 750 nm, and <span class="math inline">\(PL\)</span> the path length of the cuvette (1 cm).</p>
 <p>The photometer can read whole plates (96 samples). However, since acetone is used to extract the chlorophyll, a quartz cuvette has to be used instead of plates made of plastic. The software of the photometer still visualizes the measurements of this cuvette as a plate which can be confusing.</p>
 <p>The photometer will automatically measure the absorption at 663, 630, and 750 nm and does the blank-correction automatically. Each measurement is done twice and blanks are measured at the beginning and after every 10 samples, resulting in the following plate outlay:</p>
 <p><img src="images/clipboard-3836681340.png" id="plateoverview" class="img-fluid" width="600"></p>
@@ -803,7 +805,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Version from 08.01.2025</p>
+<p>Version from 22.01.2025</p>
 </div>
   </div>
 </footer>
