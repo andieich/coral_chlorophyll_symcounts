@@ -32,13 +32,15 @@ Chlorophyll is very unstable. Always keep samples on ice and as dark as possible
 
 ### Overview {#overview}
 
-The chlorophyll concentration ($µg~mL^{-1}$) is calculated based on the formulas given in [@jeffrey1975]:
+The chlorophyll *a* and *c2* concentrations ($µg~mL^{-1}$) are calculated based on the formulas given in [@jeffrey1975]:
 
 $$
 \text{Chlorophyll}~a = 11.43 \frac{A_{663} - A_{750}}{PL}  – 0.64\frac{A_{630} - A_{750}}{PL}
 $$
 
-, where $A_{663}$, $A_{630}$, and $A_{750}$ is the absorption at 663, 630, and 750 nm, and $PL$ the path length of the cuvette (1 cm).
+$$
+\text{Chlorophyll}~c2 = 27.09 \frac{A_{630} - A_{750}}{PL}  – 3.63\frac{A_{663} - A_{750}}{PL}
+$$ , where $A_{663}$, $A_{630}$, and $A_{750}$ is the absorption at 663, 630, and 750 nm, and $PL$ the path length of the cuvette (1 cm).
 
 The photometer can read whole plates (96 samples). However, since acetone is used to extract the chlorophyll, a quartz cuvette has to be used instead of plates made of plastic. The software of the photometer still visualizes the measurements of this cuvette as a plate which can be confusing.
 
